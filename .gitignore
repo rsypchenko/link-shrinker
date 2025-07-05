@@ -10,3 +10,7 @@ package-lock.json
 
 # VS Code
 .vscode/
+
+prisma/dev.db
+prisma/dev.db-journal
+.env

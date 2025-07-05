@@ -8,15 +8,24 @@ This is a URL shortener Node.js service.
    ```sh
    npm install
    ```
-2. Start the server:
+2. Set up the database with Prisma:
+   ```sh
+   npx prisma migrate dev --name init
+   ```
+   To open Prisma Studio (GUI for DB):
+   ```sh
+   npx prisma studio
+   ```
+3. Start the server:
    ```sh
    node index.js
    ```
-3. Open your browser and go to [http://localhost:3000](http://localhost:3000)
+4. Open your browser and go to [http://localhost:3000](http://localhost:3000)
 
 ## Requirements
 - Node.js
 - npm
+- SQLite (default, via Prisma)
 
 ## License
 MIT
